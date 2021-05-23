@@ -10,6 +10,10 @@ import Login from "./pages/login/Login";
 import Profile from "./pages/profile/Profile";
 import Register from "./pages/register/Register";
 
+
+function App() {
+  return <Home/>;
+
 class App extends Component {
   render() {
     return (      
@@ -22,6 +26,8 @@ class App extends Component {
       </BrowserRouter>
     );
   }
+
+}
 }
 
 export default App;
