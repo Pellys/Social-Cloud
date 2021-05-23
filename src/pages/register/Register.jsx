@@ -1,13 +1,14 @@
 import "./register.css";
+import { Link } from "react-router-dom"; 
 
 export default function Register() {
   return (
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Lamasocial</h3>
+          <h3 className="loginLogo">SocialCloud</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Lamasocial.
+            Connect with friends and the world around you on SocialCloud.
           </span>
         </div>
         <div className="loginRight">
@@ -16,10 +17,16 @@ export default function Register() {
             <input placeholder="Email" className="loginInput" />
             <input placeholder="Password" className="loginInput" />
             <input placeholder="Password Again" className="loginInput" />
+
+            <Link to="/">
             <button className="loginButton">Sign Up</button>
+            </Link>
+
+            <Link to="/login">
             <button className="loginRegisterButton">
               Log into Account
             </button>
+            </Link>
           </div>
         </div>
       </div>
