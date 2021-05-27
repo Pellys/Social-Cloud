@@ -20,12 +20,12 @@ export default function Share() {
         <div className="shareBottom">
             <div className="shareOptions">
                 <div className="shareOption">
-                    <PermMedia htmlColor="tomato" className="shareIcon"/>
-<input type="file" /> 
-                <div className="shareOption">
-                    <Room htmlColor="green" className="shareIcon"/>
-                    <span className="shareOptionText">Location</span>
-                </div>
+                <input id="upload-photo"  type="file" class="inputfile"/> 
+               
+                <label for="upload-photo">
+                <PermMedia htmlColor="tomato" className="shareIcon"/>
+                </label>  
+                <text className="shareOption">Carica immagine</text> 
             </div>
             <button className="shareButton">Share</button>
         </div>
