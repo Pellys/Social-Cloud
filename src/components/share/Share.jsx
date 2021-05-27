@@ -2,7 +2,11 @@ import "./share.css";
 import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons"
 
 export default function Share() {
+
+  
+  
   return (
+    
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
@@ -17,8 +21,7 @@ export default function Share() {
             <div className="shareOptions">
                 <div className="shareOption">
                     <PermMedia htmlColor="tomato" className="shareIcon"/>
-                    <span className="shareOptionText">Photo or Video</span>
-                </div>
+<input type="file" /> 
                 <div className="shareOption">
                     <Room htmlColor="green" className="shareIcon"/>
                     <span className="shareOptionText">Location</span>
@@ -28,5 +31,21 @@ export default function Share() {
         </div>
       </div>
     </div>
+                  </div>
+
   );
 }
+
+/*
+
+API TO LOAD IMAGE:
+
+var loadingImage = loadImage(
+  'https://example.org/image.png',
+  function (img) {
+    document.body.appendChild(img)
+  },
+  { maxWidth: 600 }
+)
+
+*/ 
